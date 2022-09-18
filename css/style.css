@@ -1,0 +1,114 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+:root{
+    --font01: Verdana, Geneva, sans-serif;
+    --font02: 'Passion One', cursive;
+    --font03: 'Sriracha', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html{
+    font-family: var(--font01);
+    height: 100%;
+}
+
+/* ------- INÍCIO CABEÇALHO -------*/
+header{
+    background-color: black;
+    padding: 50px 0px;
+    text-align: center;
+    border: 1px solid red;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+h1{
+    font-size: 10vw;
+    font-weight: normal;
+    font-family: var(--font02);
+    font-variant: small-caps; /*Deixa todas as letras com glifo de maiusculo, mas as primeiras letras ficam maiores.*/
+}
+
+/* ------- FIM CABEÇALHO -------*/
+
+
+/* ------- INÍCIO CONTEUDO -------*/
+section{
+    font-family: var(--font03);
+}
+
+div{
+    position: relative;
+    height: 60vw;
+    padding: 3% 4%;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+article{
+    display: inline-block;
+    position: absolute;
+    padding: 4px;
+    top: 50%;
+    transform: translate(0%, -50%); /*Melhor Usar flexbox*/
+}
+
+article p{
+    font-size: 3.6vw;
+}
+
+.white{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image-joaninha{
+    background-image: url('../imagens/background001.jpg');
+    background-position: center center;
+    
+}
+
+.image-book{
+    background-image: url('../imagens/background002.jpg');
+}
+.image-road{
+    background-image: url('../imagens/background003.jpg');
+    background-position: center center;
+}
+
+.shadow{
+    box-shadow: 2px 2px 20px black inset;
+}
+/* ------- FIM CONTEUDO -------*/
+
+/* ------- INÍCIO FOOTER -------*/
+
+footer{
+    background-color: black;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+}
+
+footer p{
+    color: white;
+    line-height: 1.5em;
+}
+/* ------- FIM FOOTER -------*/
